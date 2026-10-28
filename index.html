@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#E5EEF8">
-<title>נציגויות ישראל בעולם</title>
+<title>קוד שדה תעופה לנציגויות ישראל בעולם</title>
 <meta name="description" content="מאגר ערים וקודי שדות תעופה של נציגויות ישראל בעולם – משרד החוץ">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -233,6 +233,44 @@ mark{background:var(--hl);color:inherit;border-radius:3px;padding:0 1px}
   .toolbar{margin-top:16px}
 }
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* ===== 2026 LIGHT TRAVEL DESK REDESIGN ===== */
+:root {--bg:#f7faff;--sky:#edf6fe;--navy:#143655;--ink:#2d4960;--muted:#667e93;--faint:#8ca2b5;--line:#e1ebf4;--line-soft:#edf2f7;--blue:#1768ba;--blue-ink:#13589c;--blue-soft:#eaf4fe;--blue-soft-2:#dbeefa;--teal:#158d91;--teal-soft:#e5f6f3;--r-lg:22px;--shadow-2:0 14px 40px rgba(42,91,133,.09),0 2px 9px rgba(42,91,133,.04)}
+body {background:linear-gradient(180deg,#f0f7fe 0,#f7faff 320px,#f9fbfe 100%)}
+.hero {background:linear-gradient(115deg,#f4faff,#eaf5fd);border-bottom:1px solid #dfebf5;min-height:290px}
+.hero::before {opacity:.17;-webkit-mask-image:none;mask-image:none}
+.hero-inner {min-height:290px;align-items:flex-start;padding-block:44px 100px;gap:15px;position:relative}
+.brand {position:relative;z-index:2;max-width:620px}
+.brand-mark{background:#fff;color:var(--blue);border:1px solid #d7e8f6;box-shadow:0 5px 20px #bcd8ea55}
+h1{max-width:580px;font-size:clamp(1.7rem,1.25rem + 1.9vw,2.35rem);line-height:1.28}
+.sub{font-weight:400;color:#688096}
+.updated {margin-top:18px;color:#8198ab}
+.world-art{position:absolute;width:min(48%,460px);height:auto;left:3px;top:5px;opacity:.92;pointer-events:none;filter:drop-shadow(0 6px 10px #cee2f355)}
+.world-art svg{width:100%;height:auto;display:block}
+.map-caption{position:absolute;bottom:3px;left:16px;color:#809ab2;font:700 10px/1.2 var(--font-code);letter-spacing:.17em}
+.map-caption-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:#16a5a2;vertical-align:middle}
+.stats{position:absolute;right:max(16px,env(safe-area-inset-right,0px));bottom:41px;z-index:3;border-radius:16px;box-shadow:0 6px 25px rgba(35,87,130,.07)}
+.stat{padding:10px 24px;min-width:112px}
+.stat-n{font-size:1.43rem;color:#1768ba}
+.controls{margin-top:-35px}
+.search-card{padding:14px 16px 15px;border:1px solid #e0ebf5;border-radius:22px;box-shadow:0 13px 45px rgba(26,76,112,.09),0 2px 6px rgba(26,76,112,.04)}
+.search input{height:64px;background:#f8fbff;border-color:#dbe7f2;font-size:1.14rem;border-radius:15px}
+.search input:focus{box-shadow:0 0 0 4px #e4f2ff}
+.chips{margin-top:14px;gap:9px}
+.chip{background:#f7fafe;border-color:#e2ecf5;height:39px;font-size:.87rem}
+.chip[aria-pressed=true]{background:#1768ba;border-color:#1768ba;box-shadow:0 3px 12px #1768ba26}
+.toolbar{margin-top:28px}
+.group,.sheet{border-radius:18px!important;box-shadow:0 2px 14px rgba(25,66,103,.035)}
+.group .g-head{background:#fdfefe}
+.g-ico{background:#ebf5fc;border:1px solid #dfedf9}
+.code{border:1px solid #dceaf9;background:#eaf5ff;color:#13539a;font-size:1.13rem}
+.code:hover{background:#d9ecfc}
+.row{transition:background .14s}
+.foot{margin-top:40px}
+@media(min-width:950px){.hero-inner{padding-block:47px 110px}.brand{max-width:595px}.world-art{left:0;top:8px;width:44%;opacity:.82}.stats{bottom:38px}}
+@media(max-width:760px){.hero{min-height:270px}.hero-inner{min-height:270px;padding-block:24px 97px}.world-art{left:-25px;top:15px;width:60%;opacity:.23}.brand{max-width:100%}.brand h1{max-width:440px}.stats{bottom:35px;right:16px}.stat{padding:8px 14px;min-width:91px}.controls{margin-top:-22px}.map-caption{display:none}}
+@media(max-width:620px){.hero{min-height:275px}.hero-inner{min-height:275px;padding-block:22px 100px}.brand{gap:11px}.brand-mark{width:40px;height:40px}.brand h1{font-size:clamp(1.45rem,5.3vw,1.9rem);line-height:1.25}.sub{font-size:.91rem;margin-top:8px}.updated{margin-top:11px;font-size:.72rem}.world-art{width:85%;left:-105px;top:4px;opacity:.14}.stats{bottom:26px;left:16px;right:16px;grid-template-columns:repeat(3,1fr);width:auto}.stat{padding:9px 12px}.stat-n{font-size:1.3rem}.stat-l{font-size:.76rem}.search-card{padding:11px;border-radius:16px}.search input{height:56px;font-size:1rem}.chips{margin-top:9px}.toolbar{margin-top:18px}.c-city{font-size:1.12rem}.code{font-size:1rem;height:39px;padding-inline:9px 7px}.row{padding:12px 10px}.wrap{padding-inline:14px}}
+@media print {.controls{position:static;margin-top:10px}.hero-inner{min-height:200px}.world-art{opacity:.3}.stats{position:static}.chip{display:none}.foot{display:none}}
 </style>
 
 </head>
@@ -257,20 +295,42 @@ mark{background:var(--hl);color:inherit;border-radius:3px;padding:0 1px}
 
 <div class="app" dir="rtl" lang="he">
   <header class="hero">
-    <svg class="route" viewBox="0 0 330 92" aria-hidden="true">
-      <path d="M22 78 Q 160 -18 300 46" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="2 7" stroke-linecap="round"/>
-      <circle cx="22" cy="78" r="4.5" fill="var(--teal)"/>
-      <circle cx="300" cy="46" r="4" fill="none" stroke="var(--blue)" stroke-width="2"/>
-      <text x="34" y="88">TLV</text>
-    </svg>
     <div class="wrap hero-inner">
       <div class="brand">
         <span class="brand-mark"><svg class="ic"><use href="#i-plane"/></svg></span>
         <div>
-          <h1>נציגויות ישראל בעולם</h1>
-          <p class="sub">מאגר ערים וקודי שדות תעופה – משרד החוץ</p>
+          <h1>קוד שדה תעופה לנציגויות ישראל בעולם</h1>
+          <p class="sub">כל היעדים וקודי שדות התעופה, במקום אחד.</p>
           <p class="updated"><svg class="ic"><use href="#i-calendar"/></svg>נתונים נכונים ל־<b id="src-date"></b></p>
         </div>
+      </div>
+      <div class="world-art" aria-label="איור מפת העולם ומסלולי טיסה" role="img">
+        <svg viewBox="0 0 780 370" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <pattern id="oceanGrid" width="35" height="35" patternUnits="userSpaceOnUse"><path d="M35 0H0V35" fill="none" stroke="#dbe8f3" stroke-width="1"/></pattern>
+            <linearGradient id="land" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#c7deee"/><stop offset="1" stop-color="#a9cce4"/></linearGradient>
+          </defs>
+          <rect x="0" y="0" width="780" height="370" fill="url(#oceanGrid)" opacity=".72"/>
+          <g fill="url(#land)" stroke="#f6fbff" stroke-width="3" stroke-linejoin="round" opacity=".92">
+            <path d="M52 83 78 66 111 63 136 43 165 44 187 61 215 62 239 86 223 109 209 113 203 139 186 155 178 178 158 182 153 164 135 155 116 143 99 130 84 115 67 118 48 103Z"/>
+            <path d="M153 179 175 188 191 213 205 239 194 262 194 284 178 307 166 338 151 316 148 285 137 260 131 235 139 207Z"/>
+            <path d="M222 24 243 15 266 25 260 51 241 67 223 52Z"/>
+            <path d="M319 95 338 77 364 71 378 57 408 60 430 48 458 52 479 46 503 55 531 45 560 54 582 68 615 63 649 78 678 88 702 109 684 127 654 129 636 144 607 136 595 152 571 155 550 142 532 161 509 152 485 163 470 144 450 142 431 130 413 137 396 119 374 127 350 114 334 119Z"/>
+            <path d="M366 152 397 145 423 162 438 180 432 209 419 238 412 272 387 292 366 274 353 246 343 225 336 199 349 172Z"/>
+            <path d="M482 156 508 167 523 190 510 209 493 199 484 177Z"/>
+            <path d="M560 183 580 173 602 184 615 206 601 220 580 210Z"/>
+            <path d="M645 229 668 220 690 230 712 251 724 278 705 294 674 293 649 279 635 256Z"/>
+            <path d="M729 304 738 313 735 329 723 333 719 320Z"/>
+            <path d="M300 339 Q390 331 490 340 L577 349 565 357 314 357Z" opacity=".55"/>
+          </g>
+          <g fill="none" stroke="#2781cb" stroke-width="2" stroke-dasharray="5 7" stroke-linecap="round" opacity=".78">
+            <path d="M425 127 Q337 12 156 112"/><path d="M425 127 Q474 57 640 115"/>
+            <path d="M425 127 Q450 216 692 264"/><path d="M425 127 Q292 196 177 250"/>
+          </g>
+          <g fill="#fff" stroke="#1870bc" stroke-width="3"><circle cx="425" cy="127" r="7"/><circle cx="156" cy="112" r="5"/><circle cx="640" cy="115" r="5"/><circle cx="692" cy="264" r="5"/><circle cx="177" cy="250" r="5"/></g>
+          <g transform="translate(422 113) rotate(-24)"><path d="M0 -13 4 -2 16 3 16 7 4 6 0 15 -4 6 -15 7 -15 3 -4 -2Z" fill="#1870bc" stroke="#fff" stroke-width="1.5"/></g>
+        </svg>
+        <span class="map-caption">GLOBAL DESTINATIONS <span class="map-caption-dot"></span> FLIGHT DESK</span>
       </div>
       <div class="stats" role="list" aria-label="נתונים כלליים">
         <div class="stat" role="listitem"><span class="stat-n" id="st-cities">–</span><span class="stat-l"><svg class="ic"><use href="#i-pin"/></svg>ערים</span></div>
@@ -283,13 +343,13 @@ mark{background:var(--hl);color:inherit;border-radius:3px;padding:0 1px}
   <div class="controls" id="controls">
     <div class="wrap">
       <div class="search-card">
-        <label class="search" id="search-box" for="q">
-          <span class="sr">חיפוש</span>
+        <div class="search" id="search-box">
+          <label class="sr" for="q">חיפוש עיר, מדינה או קוד שדה תעופה</label>
           <svg class="ic s-ico"><use href="#i-search"/></svg>
           <input id="q" type="search" placeholder="חיפוש עיר, מדינה או קוד שדה תעופה..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" enterkeyhint="search">
           <span class="kbd" aria-hidden="true">/</span>
           <button type="button" class="clear" id="clear" aria-label="ניקוי החיפוש" hidden><svg class="ic"><use href="#i-x"/></svg></button>
-        </label>
+        </div>
         <div class="chips" id="chips" role="group" aria-label="סינון לפי אזור"></div>
       </div>
     </div>
@@ -806,7 +866,7 @@ function search(query, region, sortBy) {
     if (state.collapsed.size) state.collapsed.clear(); else REGIONS.forEach(function (r) { state.collapsed.add(r.id); });
     render({ noAnim: true, keepInView: "smooth" });
   });
-  resetBtn.addEventListener("click", function () { state.region = "all"; state.sort = "country"; render({ keepInView: "smooth" }); });
+  resetBtn.addEventListener("click", function () { state.sort = "country"; showAll(); });
   summary.addEventListener("click", function (e) { if (e.target.closest('[data-action="show-all"]')) showAll(); });
   $("empty-show-all").addEventListener("click", showAll);
   $("empty-all-regions").addEventListener("click", function () { state.region = "all"; render(); });
